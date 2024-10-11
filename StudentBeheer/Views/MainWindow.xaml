@@ -1,0 +1,56 @@
+﻿<Window x:Class="StudentBeheer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StudentBeheer"
+        mc:Ignorable="d"
+        Title="MainWindow"
+        Height="450"
+        Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+            <TextBox Name="txtName"
+                     Width="200" />
+            <TextBox Name="txtAge"
+                     Width="200" />
+            <TextBox Name="txtClass"
+                     Width="200" />
+            <TextBox Name="txtNumber"
+                     Width="200" />
+        </StackPanel>
+        <StackPanel Grid.Row="1" Orientation="Horizontal"
+                    HorizontalAlignment="Center"
+                    Margin="5,5,5,5">
+            <Button Name="ToevoegenButton"
+                    Content="Toevoegen"
+                    Width="100"
+                    Height="25" />
+            <Button Name="VerwijderenButton"
+                    Content="Verwijderen"
+                    Width="100"
+                    Height="25" />
+            <Button Name="UpdateButton"
+                    Content="Update"
+                    Width="100"
+                    Height="25" />
+        </StackPanel>
+        <StackPanel Grid.Row="2"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+            <ListBox Name="StudentListBox"
+                     Width="500"
+                     Height="100"
+                     />
+
+        </StackPanel>
+    </Grid>
+
+</Window>
